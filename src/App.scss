@@ -1,0 +1,84 @@
+$color-main-lighter: #F2ECBE;
+$color-main-light: #E2C799;
+$color-main-medium: #c26f48;
+$color-main-medium-light: #C08261;
+$color-main-dark: #9d624f;
+$color-main-darker: #7a2f2f;
+
+@mixin box-shadow {
+  box-shadow: 0px 0px 3px 3px rgba(154, 59, 59, 0.75);
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(154, 59, 59, 0.75);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(154, 59, 59, 0.75);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-main-lighter;
+}
+
+.calculator {
+  @include box-shadow;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 3px;
+  width: 400px;
+  height: 500px;
+  padding: 3px;
+  background-color: $color-main-darker;
+  border-radius: 5px;
+
+  & > div {
+    border-radius: 5px;
+    color: $color-main-lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border: solid 2px $color-main-light;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+#screen {
+  grid-area: 1 / 1 / 2 / 5;
+  background-color: $color-main-light;
+  color: $color-main-darker;
+  text-align: right;
+  justify-content: flex-end;
+  padding: 5px;
+  border: solid 2px $color-main-light;
+  font-size: 1.6rem;
+
+}
+
+#clear {
+  grid-area: 2 / 1 / 3 / 3;
+  background-color: $color-main-dark;
+}
+
+#zero {
+  grid-area: 6 / 1 / 7 / 3;
+}
+
+#equals {
+  grid-area: 5 / 4 / 7 / 5;
+  background-color: $color-main-dark;
+}
+
+.numbers {
+  background-color: $color-main-medium-light;
+}
+
+.operations {
+  background-color: $color-main-medium;
+}
