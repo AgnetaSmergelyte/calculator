@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AgnetaSmergelyte/calculator/static/css/main.c95c534a.css",
+    "main.js": "/AgnetaSmergelyte/calculator/static/js/main.6cad685d.js",
+    "index.html": "/AgnetaSmergelyte/calculator/index.html",
+    "main.c95c534a.css.map": "/AgnetaSmergelyte/calculator/static/css/main.c95c534a.css.map",
+    "main.6cad685d.js.map": "/AgnetaSmergelyte/calculator/static/js/main.6cad685d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c95c534a.css",
+    "static/js/main.6cad685d.js"
+  ]
+}
