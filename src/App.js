@@ -2,9 +2,7 @@ import './App.css';
 import {useState} from "react";
 
 function App() {
-
     const [expression, setExpression] = useState('0');
-
     function addToExpression(value) {
         const numRegex = /[0-9]/;
         const prevDigit = expression[expression.length - 1];

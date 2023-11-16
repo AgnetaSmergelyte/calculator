@@ -28,6 +28,8 @@ $color-main-darker: #7a2f2f;
   gap: 3px;
   width: 400px;
   height: 500px;
+  max-width: 95vw;
+  max-height: 95vh;
   padding: 3px;
   background-color: $color-main-darker;
   border-radius: 5px;
